@@ -1,0 +1,91 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Yeon Sung', 'Slabo 27px';
+}
+.wrap {
+  font-size: 0;
+}
+.box {
+  box-sizing: border-box;
+  font-size: 16px;
+  border: 2px dotted black;
+  border-width: 2px 1px;
+  display: inline-block;
+  margin: 0px;
+  padding: 15px;
+  width: 12.5%;
+  text-align: center;
+  background-color: #ce9167;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+.best3 {
+  text-align: center;
+  font-size: 27px;
+  padding: 10px;
+}
+.wrapStore {
+  padding: 0% 0.5%;
+}
+.storeBox {
+  border: 1px dotted grey;
+  width: 30.5%;
+  height: 700px;
+  display: inline-block;
+  text-align: center;
+  padding: 0% 1%;
+  padding-top: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #fffff0;
+}
+.store {
+  font-size: 25px;
+}
+.picbox {
+  width: 380px;
+  height: 230px;
+}
+.storePic {
+  position: relative;
+  left: 43px;
+}
+.prevButton {
+  position: relative;
+  left: -265px;
+  top: -65px;
+}
+.nextButton {
+  position: relative;
+  left: 10px;
+  top: -65px;
+}
+.search {
+  position: absolute;
+  top: 850px;
+  left: 420px;
+  color: grey;
+}
+.back {
+  position: absolute;
+  top: 880px;
+  left: 20px;
+  font-size: 20px;
+}
+.back:hover {
+  font-size: 21px;
+  color: purple;
+}
+.review {
+  font-size: 15px;
+  text-align: right;
+}

@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: 'Yeon Sung', 'Slabo 27px';
+  background: #FFFFEE;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  padding: 2%;
+}
+
+.box {
+  line-height: 50px;
+  border: 0.5px solid grey;
+  width: 85%;
+  height: auto;
+  position: absolute;
+  left: 7%;
+}
+
+td {
+  padding: 10px;
+}
+
+.group {
+  text-align: center;
+}
+
+.button {
+  border: none;
+  height: 30px;
+  background: #E59551;
+  color: white;
+  position: absolute;
+  right: 8%;
+  bottom: 8%;
+}
+
+.back {
+  font-size: 20px;
+  color: black;
+  position: absolute;
+  left: 8%;
+  bottom: 8%;
+  text-decoration: none;
+}
+
+.back:hover {
+  color: purple;
+  font-size: 21px;
+}

@@ -1,0 +1,122 @@
+body {
+  font-family: 'Yeon Sung', 'Slabo 27px';
+  background: #fcee96;
+  margin: 0;
+}
+
+.img{
+  position: absolute;
+  top:50%;
+  left:25%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  z-index: 2;
+  text-align: center;
+}
+
+.content{
+  position: absolute;
+  top:50%;
+  left:25%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  z-index: 2;
+  text-align: center;
+}
+
+.teamName {
+  color: #a6172d;
+}
+
+.startPic {
+  width: 550px;
+  animation: spin 25s infinite linear;
+}
+
+@keyframes spin {
+  0%  {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+table {
+  position: absolute;
+  top: 5%;
+  left: 60%;
+}
+
+tr {
+  height: 170px;
+}
+
+.tdLine {
+  border-bottom: 2px solid black;
+  width: 410px;
+}
+
+a {
+  position: relative;
+  left: 30px;
+}
+
+.haeil {
+  position: relative;
+  left: -7%;
+  width: 50px;
+  height: 70px;
+}
+
+.categorize {
+  text-decoration: none;
+  font-size: 38px;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.categorize:hover {
+  color: purple;
+  font-size: 39px;
+}
+
+.minha {
+  position: relative;
+  left: -7%;
+  width: 50px;
+  height: 70px;
+}
+
+.pick {
+  text-decoration: none;
+  font-size: 38px;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pick:hover {
+  color: purple;
+  font-size: 39px;
+}
+
+.jeongho {
+  position: relative;
+  left: -7%;
+  width: 50px;
+  height: 70px;
+}
+
+.review {
+  text-decoration: none;
+  font-size: 38px;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.review:hover {
+  color: purple;
+  font-size: 39px;
+}

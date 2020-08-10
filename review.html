@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./review.css">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Yeon+Sung" rel="stylesheet">
+  <title>리뷰 작성</title>
+</head>
+<body>
+  <header class="title">
+    리뷰 작성
+  </header>
+  <section>
+    <div class="box">
+      <table>
+        <tbody>
+          <article>
+            <tr>
+              <td class="group">음식점 선택</td>
+              <td>
+                <form>
+                  <select name = "store">
+                    <option value="1">전주식당</option>
+                    <option value="2">해피나라</option>
+                    <option value="3">100번지 연탄구이</option>
+                    <option value="4">남선반점</option>
+                    <option value="5">서울대반점</option>
+                    <option value="6">공덕관</option>
+                    <option value="7">신가쯔</option>
+                    <option value="8">바다회포차</option>
+                    <option value="9">카레부리</option>
+                    <option value="10">삐삐핵볶이</option>
+                    <option value="11">동대문엽기떡볶이</option>
+                    <option value="12">소라분식</option>
+                    <option value="13">미쳐버린파닭</option>
+                    <option value="14">깻잎두마리칩킨</option>
+                    <option value="15">지코바</option>
+                    <option value="16">만스피자</option>
+                    <option value="17">피자헤븐</option>
+                    <option value="18">마리오피자</option>
+                    <option value="19">젠틀보쌈</option>
+                    <option value="20">잭아저씨족발보쌈</option>
+                    <option value="21">신라보쌈</option>
+                    <option value="22">맘스터치</option>
+                    <option value="23">버거킹</option>
+                    <option value="24">맥도날드</option>
+                    <option value="25">타코리또</option>
+                    <option value="26">본죽</option>
+                    <option value="27">본도시락</option>
+                  </select>
+                </form>
+              </td>
+            </tr>
+          </article>
+          <article>
+            <tr>
+              <td class="group">후   기</td>
+              <td><textarea name="" id="" cols="50" rows="10"></textarea></td>
+            </tr>
+          </article>
+          <article>
+            <tr>
+              <td class="group">사진 첨부</td>
+              <td><input type="file"></td>
+            </tr>
+          </article>
+          <article>
+            <tr>
+              <td class="group">별  점</td>
+              <td>
+                <form>
+                  <label><input type="radio" name="star" value="1"><img src="star\star1.png" height="15"></label>
+                  <label><input type="radio" name="star" value="2"><img src="star\star2.png" height="15"></label>
+                  <label><input type="radio" name="star" value="3"><img src="star\star3.png" height="15"></label>
+                  <label><input type="radio" name="star" value="4"><img src="star\star4.png" height="15"></label>
+                  <label><input type="radio" name="star" value="5"><img src="star\star5.png" height="15"></label>
+                </form>
+              </td>
+            </tr>
+          </article>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <button class="button" type="button" onclick="alert('제출이 완료되었습니다.')">제출하기</button>
+  <nav>
+    <a class="back" href="startPage.html">
+      <span> << 돌아가기 </span>
+    </a>
+  </nav>
+</body>
+</html>

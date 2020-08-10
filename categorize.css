@@ -1,0 +1,43 @@
+body {
+  font-family: 'Yeon Sung', 'Slabo 27px';
+  background: #FFFFE8;
+}
+
+table {
+  position: absolute;
+  left: 20%;
+  border-collapse: collapse;
+  border-style: dotted;
+}
+
+td {
+  border-style: dotted;
+}
+
+table img {
+  width: 300px;
+  height: 160px;
+}
+
+.choose {
+  font-size: 35px;
+  margin: 15px;
+}
+
+table img:hover {
+  opacity:0.3;
+}
+
+.back {
+  font-size: 25px;
+  color: black;
+  position: absolute;
+  top: 560px;
+  left: 20px;
+  text-decoration: none;
+}
+
+.back:hover {
+  color: purple;
+  font-size: 26px;
+}

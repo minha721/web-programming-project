@@ -1,0 +1,88 @@
+body {
+  font-family: 'Yeon Sung', 'Slabo 27px';
+  background: #FFFFE8;
+  margin: 0;
+}
+
+.random1 {
+  float: left;
+  width: 400px;
+}
+
+.random2 {
+  float: right;
+  width: 400px;
+}
+
+.title {
+  width: 1260px;
+}
+
+.title1, .title2 {
+  text-align: center;
+}
+
+.wheel {
+  position: absolute;
+  top: 125px;
+  left: 200px;
+  width: 400px;
+  margin-top: 20px;
+  transition: transform 8s;
+  transform: rotate(0deg);
+  pointer-events: none;
+}
+
+.peg {
+  display: block;
+  width: 30px;
+  position: absolute;
+  top: 100px;
+  left: 390px;
+}
+
+.button {
+  border: none;
+  position: absolute;
+  top: 580px;
+  left: 350px;
+  font-size: 24px;
+  border-radius: 10px;
+  width: 100px;
+  height: 60px;
+  color: white;
+  background: #89bd46;
+}
+
+.wrapButton {
+  border: none;
+  position: absolute;
+  top: 100px;
+  left: 900px;
+}
+
+.pickButton {
+  border: none;
+  background: #EC7357;
+  color: white;
+  border-radius: 10px;
+  width: 120px;
+  height: 30px;
+}
+
+.back {
+  position: absolute;
+  left: 10px;
+  top: 820px;
+  font-size: 25px;
+  color: black;
+  left: 20px;
+  text-decoration: none;
+  width: 100%;
+  height: 10%;
+}
+
+.back:hover {
+  color: purple;
+  font-size: 26px;
+}

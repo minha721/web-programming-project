@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./pick.css">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Yeon+Sung" rel="stylesheet">
+  <title>행운의 랜덤 돌림판</title>
+</head>
+<body>
+    <header>
+      <table class="title">
+        <colgroup>
+          <col width="650px">
+          <col width="400px">
+        </colgroup>
+        <tr>
+          <td><h1 class="title1">행운의 랜덤 돌림판!</h1></td>
+          <td><h1 class="title2">제비뽑기</h1></td>
+        </tr>
+      </table>
+    </header>
+  <div class="random1">
+    <img src="돌림판.png" class="wheel"><br>
+    <img src="triangle.png" class="peg"><br>
+    <button class="button">Spin</button>
+    <script>
+      var wheel = document.querySelector(".wheel"),
+        button = document.querySelector(".button"),
+        rando = 0;
+      var spin_wheel = function() {
+        rando += (Math.random() * 360) + 3000;
+        wheel.style.webkitTransform = "rotate(" + rando + "deg)";
+        wheel.style.mozTransform = "rotate(" + rando + "deg)";
+        wheel.style.msTransform = "rotate(" + rando + "deg)";
+        wheel.style.transform = "rotate(" + rando + "deg)";
+      }
+      button.addEventListener("click", spin_wheel, false);
+    </script>
+  </div>
+  <div class="random2">
+    <div class="wrapButton">
+      <button class="pickButton" onclick="document.getElementById('text1').innerHTML=getRndText1()">한식이라면?</button> &nbsp;&nbsp;<< click!
+      <p id="text1">&nbsp;</p>
+      <button class="pickButton" onclick="document.getElementById('text2').innerHTML=getRndText2()">중식이라면?</button> &nbsp;&nbsp;<< click!
+      <p id="text2">&nbsp;</p>
+      <button class="pickButton" onclick="document.getElementById('text3').innerHTML=getRndText3()">일식이라면?</button> &nbsp;&nbsp;<< click!
+      <p id="text3">&nbsp;</p>
+      <button class="pickButton" onclick="document.getElementById('text4').innerHTML=getRndText4()">분식이라면?</button> &nbsp;&nbsp;<< click!
+      <p id="text4">&nbsp;</p>
+      <button class="pickButton" onclick="document.getElementById('text5').innerHTML=getRndText5()">치킨이라면?</button> &nbsp;&nbsp;<< click!
+      <p id="text5">&nbsp;</p>
+      <button class="pickButton" onclick="document.getElementById('text6').innerHTML=getRndText6()">피자라면?</button> &nbsp;&nbsp;<< click!
+      <p id="text6">&nbsp;</p>
+      <button class="pickButton" onclick="document.getElementById('text7').innerHTML=getRndText7()">족발보쌈이라면?</button> &nbsp;&nbsp;<< click!
+      <p id="text7">&nbsp;</p>
+      <button class="pickButton" onclick="document.getElementById('text8').innerHTML=getRndText8()">햄버거라면?</button> &nbsp;&nbsp;<< click!
+      <p id="text8">&nbsp;</p>
+      <button class="pickButton" onclick="document.getElementById('text9').innerHTML=getRndText9()">기타음식이라면?</button> &nbsp;&nbsp;<< click!
+      <p id="text9">&nbsp;</p>
+    </div>
+    <script>
+      function getRndText1() {
+        var array_text = ['전주식당', '해피나라', '100번지 연탄구이'];
+        var result = Math.floor(Math.random() * (array_text.length));
+        return array_text[result];
+      }
+      function getRndText2() {
+        var array_text = ['남선반점', '서울대반점', '공덕관'];
+        var result = Math.floor(Math.random() * (array_text.length));
+        return array_text[result];
+      }
+      function getRndText3() {
+        var array_text = ['신가쯔', '맛보면못참치', '미소야'];
+        var result = Math.floor(Math.random() * (array_text.length));
+        return array_text[result];
+      }
+      function getRndText4() {
+        var array_text = ['삐삐핵볶이', '동대문엽기떡볶이', '소라분식'];
+        var result = Math.floor(Math.random() * (array_text.length));
+        return array_text[result];
+      }
+      function getRndText5() {
+        var array_text = ['미쳐버린파닭', '깻잎두마리치킨', '지코바'];
+        var result = Math.floor(Math.random() * (array_text.length));
+        return array_text[result];
+      }
+      function getRndText6() {
+        var array_text = ['만스피자', '피자마루', '피자헤븐'];
+        var result = Math.floor(Math.random() * (array_text.length));
+        return array_text[result];
+      }
+      function getRndText7() {
+        var array_text = ['젠틀보쌈', '마왕족발', '잭아저씨족발보쌈'];
+        var result = Math.floor(Math.random() * (array_text.length));
+        return array_text[result];
+      }
+      function getRndText8() {
+        var array_text = ['맘스터치', '버거킹', '맥도날드'];
+        var result = Math.floor(Math.random() * (array_text.length));
+        return array_text[result];
+      }
+      function getRndText9() {
+        var array_text = ['타코리또', '전설의왕십리불곱창', '본도시락'];
+        var result = Math.floor(Math.random() * (array_text.length));
+        return array_text[result];
+      }
+    </script>
+</div>
+  <a class="back" href="startPage.html">
+    <span> << 돌아가기 </span>
+  </a>
+</body>
+</html>
